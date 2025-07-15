@@ -37,7 +37,7 @@ public class Expenditure_Management_System {
                     reportAnalysis.report();
                     break;
                 case "6":
-                    System.out.println("📎 Launching Receipt/Invoice Manager...");
+                    System.out.println("Launching Receipt/Invoice Manager...");
                     receipt.loadReceipt();
                     break;
                 case "7":
