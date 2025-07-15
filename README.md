@@ -1,4 +1,4 @@
-# 📘 Nkwa Real Estate Expenditure Management System
+#  Nkwa Real Estate Expenditure Management System
 
 An offline-first, command-line Java application designed by Nkwa Real Estate Ltd to efficiently 
 **track expenditures**, **manage bank accounts**, **categorize costs**, **handle receipts/invoices**, 
@@ -7,7 +7,7 @@ without external libraries.
 
 ---
 
-## ✅ Main Features
+##  Main Features
 
 * **Expenditure Management**
   Record and view expenditures by code, amount, date, phase, category, and associated bank account.
@@ -35,7 +35,7 @@ without external libraries.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 
@@ -62,7 +62,7 @@ Each `Menu/` file corresponds to a user-facing feature, while `DSA/` hosts the c
 
 ---
 
-## 🧰 How Data Structures Are Used
+##  How Data Structures Are Used
 
 | Feature                 | Data Structure                                                | Purpose                                                 |
 | ----------------------- | ------------------------------------------------------------- | ------------------------------------------------------- |
@@ -93,7 +93,7 @@ Each `Menu/` file corresponds to a user-facing feature, while `DSA/` hosts the c
 
 ---
 
-## 📊 Complexity Analysis
+##  Complexity Analysis
 
 * **HashMap insert/get**:
 
@@ -129,7 +129,7 @@ Each `Menu/` file corresponds to a user-facing feature, while `DSA/` hosts the c
 
 ---
 
-## 🛠️ Getting Started
+##  Getting Started
 
 1. **Clone** the repository.
 2. **Compile** all `.java` files:
@@ -147,7 +147,7 @@ Each `Menu/` file corresponds to a user-facing feature, while `DSA/` hosts the c
 
 ---
 
-## 🧪 📊 DSA Performance Benchmark
+##  DSA Performance Benchmark
 
 The system includes an in-built **performance testing module** (`DSAPerformanceTest`) that benchmarks 
 the custom data structures used throughout the application.
@@ -169,11 +169,11 @@ the custom data structures used throughout the application.
 
 ---
 
-### 📌 What This Tells Us
+###  What This Tells Us
 
 These benchmarks measure **how quickly your custom-built data structures** handle large-scale data operations (10,000 items), giving insight into **time complexity**, **implementation efficiency**, and **real-world performance** in the application’s core functionality.
 
-#### 🔍 Interpretation
+####  Interpretation
 
 | Structure                   | Efficiency Verdict           | Reason                                                                                            |
 |-----------------------------| ---------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -187,7 +187,7 @@ These benchmarks measure **how quickly your custom-built data structures** handl
 
 ---
 
-### 🔍 Summary
+###  Summary
 
 The application performs reliably with custom-built DSA logic and holds up under realistic data loads. 
 Here’s how the performance maps to real functionality:
@@ -201,11 +201,9 @@ Here’s how the performance maps to real functionality:
 * **Burn Rate/Monthly Reports** → `treeMap` organizes and aggregates costs per `YearMonth`.
 
 ---
-## ✍️ Author & Contact
+##  Author & Contact
 
 Developed by Antwiwaa and team for offline-capable financial tracking and analysis — built for 
 affordability and technical transparency.
 
-Here’s the **updated README** section with the **DSA performance results** you provided, including a 
-detailed explanation of what they imply about your system's efficiency and use of custom data structures:
 
