@@ -45,12 +45,12 @@ public class Expenditure_Management_System {
                     break;
 
                 case "8":
-                    System.out.println("✅ Progress saved. Exiting...");
+                    System.out.println(" Progress saved. Exiting...");
                     System.exit(0);
                     break;
 
                 default:
-                    System.out.println("❌ Invalid choice. Please try again.");
+                    System.out.println("Invalid choice. Please try again.");
             }
 
 
