@@ -175,15 +175,15 @@ These benchmarks measure **how quickly your custom-built data structures** handl
 
 #### 🔍 Interpretation
 
-| Structure                   | Efficiency Verdict                   | Reason                                                                                            |
-|-----------------------------| ------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| **ArrayList**               | 🚫 **Inefficient for large sorting** | O(n²) bubble sort is slow for larger datasets; suitable only for small menus or short reports.    |
-| **LinkedList Add**          | ✅ Acceptable                         | O(n), but for 10k operations, 11ms is decent due to lightweight node management.                  |
-| **HashMap Get/Put**         | ✅ Reasonable                         | Slightly slower than expected (\~40ms), possibly due to primitive hashing or collision handling.  |
-| **HashSet Add**             | ⚠️ Could Be Improved                 | Add performance close to HashMap; may be suffering from hash collision resolution inefficiencies. |
-| **Stack Push/Pop**          | 💯 Excellent                         | Constant-time operations showing sub-millisecond results.                                         |
-| **PriorityQueue (Min-Heap)** | ✅ Very Efficient                     | Add and poll remain within logarithmic bounds (\~4-9ms).                                          |
-| **TreeMap (by Month)**      | 💡 **Very Efficient**                | Only 7ms for 10k monthly entries with update logic — great for reporting & trend analytics.       |
+| Structure                   | Efficiency Verdict           | Reason                                                                                            |
+|-----------------------------| ---------------------------- | ------------------------------------------------------------------------------------------------- |
+| **ArrayList**               | **Inefficient for large sorting** | O(n²) bubble sort is slow for larger datasets; suitable only for small menus or short reports.    |
+| **LinkedList Add**          |  Acceptable                  | O(n), but for 10k operations, 11ms is decent due to lightweight node management.                  |
+| **HashMap Get/Put**         |  Reasonable                  | Slightly slower than expected (\~40ms), possibly due to primitive hashing or collision handling.  |
+| **HashSet Add**             |  Could Be Improved           | Add performance close to HashMap; may be suffering from hash collision resolution inefficiencies. |
+| **Stack Push/Pop**          |  Excellent                   | Constant-time operations showing sub-millisecond results.                                         |
+| **PriorityQueue (Min-Heap)** | Very Efficient               | Add and poll remain within logarithmic bounds (\~4-9ms).                                          |
+| **TreeMap (by Month)**      | **Very Efficient**         | Only 7ms for 10k monthly entries with update logic — great for reporting & trend analytics.       |
 
 ---
 
@@ -192,13 +192,13 @@ These benchmarks measure **how quickly your custom-built data structures** handl
 The application performs reliably with custom-built DSA logic and holds up under realistic data loads. 
 Here’s how the performance maps to real functionality:
 
-* 📂 **Menu Sorting/Filtering** → Uses `arrayList` and `bubbleSort`: fine for small menus but not for big logs.
-* 🧾 **Expenditure History** → `linkedList` for efficient sequential insertions.
-* 🔐 **Accounts & Expenditure Lookup** → `hashmap` for fast lookups of account codes and transactions.
-* 📂 **Unique Categories** → `hashset` to prevent duplicates efficiently.
-* 📸 **Receipts (LIFO)** → `stack` used to review uploads in reverse order.
-* 💰 **Low Balance Alerts** → `priorityqueue` used to prioritize accounts with lowest balances.
-* 📈 **Burn Rate/Monthly Reports** → `treeMap` organizes and aggregates costs per `YearMonth`.
+* **Menu Sorting/Filtering** → Uses `arrayList` and `bubbleSort`: fine for small menus but not for big logs.
+* **Expenditure History** → `linkedList` for efficient sequential insertions.
+* **Accounts & Expenditure Lookup** → `hashmap` for fast lookups of account codes and transactions.
+* **Unique Categories** → `hashset` to prevent duplicates efficiently.
+* **Receipts (LIFO)** → `stack` used to review uploads in reverse order.
+* **Low Balance Alerts** → `priorityqueue` used to prioritize accounts with lowest balances.
+* **Burn Rate/Monthly Reports** → `treeMap` organizes and aggregates costs per `YearMonth`.
 
 ---
 ## ✍️ Author & Contact
