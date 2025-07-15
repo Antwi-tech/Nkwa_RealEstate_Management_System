@@ -1,7 +1,3 @@
-Here’s a detailed **README** for the **Nkwa Real Estate Expenditure Management System**, based on the GitHub project and extracted information:
-
----
-
 # 📘 Nkwa Real Estate Expenditure Management System
 
 An offline-first, command-line Java application designed by Nkwa Real Estate Ltd to efficiently **track expenditures**, **manage bank accounts**, **categorize costs**, **handle receipts/invoices**, and generate **financial reports**, all using **vanilla Java** and **custom-built data structures** without external libraries ([github.com][1]).
