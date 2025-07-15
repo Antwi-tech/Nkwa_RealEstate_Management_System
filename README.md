@@ -1,6 +1,9 @@
 # 📘 Nkwa Real Estate Expenditure Management System
 
-An offline-first, command-line Java application designed by Nkwa Real Estate Ltd to efficiently **track expenditures**, **manage bank accounts**, **categorize costs**, **handle receipts/invoices**, and generate **financial reports**, all using **vanilla Java** and **custom-built data structures** without external libraries ([github.com][1]).
+An offline-first, command-line Java application designed by Nkwa Real Estate Ltd to efficiently 
+**track expenditures**, **manage bank accounts**, **categorize costs**, **handle receipts/invoices**, 
+and generate **financial reports**, all using **vanilla Java** and **custom-built data structures** 
+without external libraries.
 
 ---
 
@@ -35,8 +38,8 @@ An offline-first, command-line Java application designed by Nkwa Real Estate Ltd
 ## 📁 Project Structure
 
 ```
-src/
-└── Menu/
+
+── Menu/
     ├── addExpenditure.java
     ├── viewExpenditure.java
     ├── bankAccount.java
@@ -85,7 +88,8 @@ Each `Menu/` file corresponds to a user-facing feature, while `DSA/` hosts the c
 
 * **Aggregation**
 
-    * `TreeMap` is implemented via a BST that aggregates by month in O(log n) per insertion on average, and O(n) for in-order traversal.
+    * `TreeMap` is implemented via a BST that aggregates by month in O(log n) per insertion on average,
+    * and O(n) for in-order traversal.
 
 ---
 
@@ -140,19 +144,13 @@ Each `Menu/` file corresponds to a user-facing feature, while `DSA/` hosts the c
    ```
 4. **Interact** via the menu-driven CLI. View/write data in the `Menu/` directory files.
 
----
-
-## ✍️ Author & Contact
-
-Developed by Nkwa Real Estate Ltd (Jephthah Antwi and team) for offline-capable financial tracking and analysis — built for affordability and technical transparency.
-
-Here’s the **updated README** section with the **DSA performance results** you provided, including a detailed explanation of what they imply about your system's efficiency and use of custom data structures:
 
 ---
 
 ## 🧪 📊 DSA Performance Benchmark
 
-The system includes an in-built **performance testing module** (`DSAPerformanceTest`) that benchmarks the custom data structures used throughout the application.
+The system includes an in-built **performance testing module** (`DSAPerformanceTest`) that benchmarks 
+the custom data structures used throughout the application.
 
 ### ⚙️ Benchmark Results (10,000 Elements Unless Noted)
 
@@ -177,21 +175,22 @@ These benchmarks measure **how quickly your custom-built data structures** handl
 
 #### 🔍 Interpretation
 
-| Structure                    | Efficiency Verdict                   | Reason                                                                                            |
-| ---------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| **ArrayList + Bubble Sort**  | 🚫 **Inefficient for large sorting** | O(n²) bubble sort is slow for larger datasets; suitable only for small menus or short reports.    |
-| **LinkedList Add**           | ✅ Acceptable                         | O(n), but for 10k operations, 11ms is decent due to lightweight node management.                  |
-| **HashMap Get/Put**          | ✅ Reasonable                         | Slightly slower than expected (\~40ms), possibly due to primitive hashing or collision handling.  |
-| **HashSet Add**              | ⚠️ Could Be Improved                 | Add performance close to HashMap; may be suffering from hash collision resolution inefficiencies. |
-| **Stack Push/Pop**           | 💯 Excellent                         | Constant-time operations showing sub-millisecond results.                                         |
+| Structure                   | Efficiency Verdict                   | Reason                                                                                            |
+|-----------------------------| ------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| **ArrayList**               | 🚫 **Inefficient for large sorting** | O(n²) bubble sort is slow for larger datasets; suitable only for small menus or short reports.    |
+| **LinkedList Add**          | ✅ Acceptable                         | O(n), but for 10k operations, 11ms is decent due to lightweight node management.                  |
+| **HashMap Get/Put**         | ✅ Reasonable                         | Slightly slower than expected (\~40ms), possibly due to primitive hashing or collision handling.  |
+| **HashSet Add**             | ⚠️ Could Be Improved                 | Add performance close to HashMap; may be suffering from hash collision resolution inefficiencies. |
+| **Stack Push/Pop**          | 💯 Excellent                         | Constant-time operations showing sub-millisecond results.                                         |
 | **PriorityQueue (Min-Heap)** | ✅ Very Efficient                     | Add and poll remain within logarithmic bounds (\~4-9ms).                                          |
-| **TreeMap (by Month)**       | 💡 **Very Efficient**                | Only 7ms for 10k monthly entries with update logic — great for reporting & trend analytics.       |
+| **TreeMap (by Month)**      | 💡 **Very Efficient**                | Only 7ms for 10k monthly entries with update logic — great for reporting & trend analytics.       |
 
 ---
 
 ### 🔍 Summary
 
-The application performs reliably with custom-built DSA logic and holds up under realistic data loads. Here’s how the performance maps to real functionality:
+The application performs reliably with custom-built DSA logic and holds up under realistic data loads. 
+Here’s how the performance maps to real functionality:
 
 * 📂 **Menu Sorting/Filtering** → Uses `arrayList` and `bubbleSort`: fine for small menus but not for big logs.
 * 🧾 **Expenditure History** → `linkedList` for efficient sequential insertions.
@@ -202,4 +201,11 @@ The application performs reliably with custom-built DSA logic and holds up under
 * 📈 **Burn Rate/Monthly Reports** → `treeMap` organizes and aggregates costs per `YearMonth`.
 
 ---
+## ✍️ Author & Contact
+
+Developed by Antwiwaa and team for offline-capable financial tracking and analysis — built for 
+affordability and technical transparency.
+
+Here’s the **updated README** section with the **DSA performance results** you provided, including a 
+detailed explanation of what they imply about your system's efficiency and use of custom data structures:
 
