@@ -67,12 +67,12 @@ public class addExpenditure {
             bankAccount.BankAccount acc = bankAccount.accounts.get(account);
 
             if (acc == null) {
-                System.out.println("❌ Account ID not found in accounts.txt.");
+                System.out.println(" Account ID not found in accounts.txt.");
                 System.out.print("➕ Do you want to create it now? (yes/no): ");
                 String addNow = s.nextLine().trim().toLowerCase();
 
                 if (!addNow.equals("yes")) {
-                    System.out.println("⛔ Cannot proceed without a valid account.");
+                    System.out.println("Cannot proceed without a valid account.");
                     return;
                 }
 
@@ -98,10 +98,10 @@ public class addExpenditure {
             }
 
             if (acc.balance < amount) {
-                System.out.println("⚠️ Warning: Insufficient funds. Proceed with negative balance? (yes/no): ");
+                System.out.println(" Warning: Insufficient funds. Proceed with negative balance? (yes/no): ");
                 String proceed = s.nextLine().trim().toLowerCase();
                 if (!proceed.equals("yes")) {
-                    System.out.println("❌ Expenditure not recorded.");
+                    System.out.println(" Expenditure not recorded.");
                     return;
                 }
             }
@@ -124,7 +124,7 @@ public class addExpenditure {
 
             saveToFile(e);
 
-            System.out.println("\n✅ Expenditure Added Successfully!\n");
+            System.out.println("\n Expenditure Added Successfully!\n");
 
             expenditureMap.printAll();
             historyList.printList();
@@ -132,7 +132,7 @@ public class addExpenditure {
             System.out.print("\n➕ Add another expenditure? (yes/no): ");
             String again = s.nextLine().trim().toLowerCase();
             if (!again.equals("yes")) {
-                System.out.println("👋 Exiting. Goodbye!");
+                System.out.println("Exiting. Goodbye!");
                 break;
             }
         }
@@ -185,11 +185,11 @@ public class addExpenditure {
             try {
                 return LocalDate.parse(s.nextLine().trim());
             } catch (DateTimeParseException e) {
-                System.out.println("❌ Invalid date format. Use YYYY-MM-DD.");
+                System.out.println("Invalid date format. Use YYYY-MM-DD.");
                 attempts++;
             }
         }
-        System.out.println("❌ Too many invalid attempts. Exiting.");
+        System.out.println("Too many invalid attempts. Exiting.");
         System.exit(0);
         return null;
     }
@@ -225,7 +225,7 @@ public class addExpenditure {
             }
 
         } catch (IOException e) {
-            System.out.println("⚠️ Failed to update category.txt: " + e.getMessage());
+            System.out.println(" Failed to update category.txt: " + e.getMessage());
         }
     }
 }

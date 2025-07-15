@@ -14,7 +14,7 @@ public class manageCategories {
         try {
             loadCategoriesFromFile(); // Load categories on class initialization
         } catch (IOException e) {
-            System.out.println("⚠️ Error loading categories from file: " + e.getMessage());
+            System.out.println(" Error loading categories from file: " + e.getMessage());
         }
     }
 
@@ -23,7 +23,7 @@ public class manageCategories {
 
         while (true) {
             try {
-                System.out.println("\n📂 Category Manager:");
+                System.out.println("\nCategory Manager:");
                 System.out.println("1. List Categories");
                 System.out.println("2. Add Category");
                 System.out.println("3. Delete Category");
@@ -45,10 +45,10 @@ public class manageCategories {
                     case "0":
                         return;
                     default:
-                        System.out.println("❌ Invalid option. Please enter 1, 2, 3, or 0.");
+                        System.out.println("Invalid option. Please enter 1, 2, 3, or 0.");
                 }
             } catch (Exception e) {
-                System.out.println("❌ An unexpected error occurred: " + e.getMessage());
+                System.out.println(" An unexpected error occurred: " + e.getMessage());
             }
         }
     }
@@ -66,23 +66,22 @@ public class manageCategories {
         try {
             System.out.print("Enter new category: ");
             String input = s.nextLine().trim();
-
             if (input.isEmpty()) {
-                System.out.println("⚠️ Category cannot be empty.");
+                System.out.println(" Category cannot be empty.");
                 return;
             }
 
             if (categorySet.contains(input)) {
-                System.out.println("⚠️ Category already exists.");
+                System.out.println(" Category already exists.");
                 return;
             }
 
             categorySet.add(input);
             saveCategoriesToFile(); // <-- Save to file
-            System.out.println("✅ Category added!");
+            System.out.println(" Category added!");
 
         } catch (Exception e) {
-            System.out.println("❌ Failed to add category: " + e.getMessage());
+            System.out.println(" Failed to add category: " + e.getMessage());
         }
     }
 
@@ -92,21 +91,21 @@ public class manageCategories {
             String input = s.nextLine().trim();
 
             if (input.isEmpty()) {
-                System.out.println("⚠️ Category cannot be empty.");
+                System.out.println(" Category cannot be empty.");
                 return;
             }
 
             if (!categorySet.contains(input)) {
-                System.out.println("⚠️ Category does not exist.");
+                System.out.println(" Category does not exist.");
                 return;
             }
 
             categorySet.remove(input);
             saveCategoriesToFile(); // <-- Save to file
-            System.out.println("✅ Category deleted!");
+            System.out.println(" Category deleted!");
 
         } catch (Exception e) {
-            System.out.println("❌ Failed to delete category: " + e.getMessage());
+            System.out.println(" Failed to delete category: " + e.getMessage());
         }
     }
 
@@ -134,7 +133,7 @@ public class manageCategories {
                 }
             }
         } catch (IOException e) {
-            System.out.println("⚠️ Failed to save categories to file: " + e.getMessage());
+            System.out.println(" Failed to save categories to file: " + e.getMessage());
         }
     }
     public static void addCategoryIfNew(String category) {
@@ -144,7 +143,7 @@ public class manageCategories {
         if (!categorySet.contains(category)) {
             categorySet.add(category); // Add to memory
             saveCategoriesToFile();    // Save to category.txt
-            System.out.println("📁 New category added to category.txt: " + category);
+            System.out.println(" New category added to category.txt: " + category);
         }
     }
 

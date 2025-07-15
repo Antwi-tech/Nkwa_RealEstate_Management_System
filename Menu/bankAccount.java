@@ -65,7 +65,7 @@ public class bankAccount {
             return;
         }
 
-        System.out.print("Enter Name: ");
+        System.out.print("Enter Bank Name: ");
         String name = scanner.nextLine();
 
         System.out.print("Enter Initial Balance: ");
@@ -164,7 +164,7 @@ public class bankAccount {
         }
     }
 
-    // 🟡 BankAccount INNER CLASS (Self-contained)
+    // BankAccount INNER CLASS (Self-contained)
     public static class BankAccount implements Comparable<BankAccount> {
         String id;
         String name;

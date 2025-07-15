@@ -1,0 +1,10 @@
+Expenditure: 2345
+Receipt: Express ventures
+Uploader: Antwiwaa
+Status: Pending
+---
+Expenditure: 2345
+Receipt: call
+Uploader: Antwiwaa
+Status: Pending
+---

@@ -1,0 +1,7 @@
+Code: 2345
+Amount: 890.0
+Date: 2025-07-14
+Phase: Construction
+Category: Cement
+Account: 1400007253216
+

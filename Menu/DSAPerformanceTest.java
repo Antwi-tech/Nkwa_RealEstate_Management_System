@@ -12,7 +12,7 @@ import java.time.YearMonth;
 
 public class DSAPerformanceTest {
     public static void run() {
-        System.out.println("\n=== 📊 DSA PERFORMANCE TESTS ===");
+        System.out.println("\n=== DSA PERFORMANCE TESTS ===");
 
         testArrayListSort();
         testLinkedList();
@@ -89,7 +89,7 @@ public class DSAPerformanceTest {
 
     private static void testTreeMap() {
         myTreeMap reportMap = new myTreeMap();
-        System.out.println("\n📈 Testing TreeMap (Reports by Month)...");
+        System.out.println("\nTesting TreeMap (Reports by Month)...");
 
         long start = System.nanoTime();
         for (int i = 0; i < 10000; i++) {

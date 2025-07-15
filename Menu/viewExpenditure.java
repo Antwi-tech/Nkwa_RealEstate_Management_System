@@ -48,10 +48,10 @@ public class viewExpenditure {
                     searchByAccount(s);
                     break;
                 case "0":
-                    System.out.println("📤 Returning to main menu...");
+                    System.out.println("Returning to main menu...");
                     return;
                 default:
-                    System.out.println("❌ Invalid input. Try again.");
+                    System.out.println(" Invalid input. Try again.");
             }
         }
     }
@@ -90,12 +90,12 @@ public class viewExpenditure {
                 }
             }
         } catch (Exception e) {
-            System.out.println("❌ Error reading file: " + e.getMessage());
+            System.out.println(" Error reading file: " + e.getMessage());
         }
     }
 
     private static void listChronological() {
-        System.out.println("\n📅 Expenditure in Chronological Order:");
+        System.out.println("\n Expenditure in Chronological Order:");
         for (String code : historyList.toArray()) {
             Expenditure e = expenditureMap.get(code);
             if (e != null) {
@@ -120,7 +120,7 @@ public class viewExpenditure {
             }
         }
 
-        System.out.println("\n📂 Sorted by Category:");
+        System.out.println("\nSorted by Category:");
         for (int i = 0; i < sortedCodes.size(); i++) {
             System.out.println(expenditureMap.get(sortedCodes.get(i)) + "\n------------------");
         }
@@ -133,7 +133,7 @@ public class viewExpenditure {
             System.out.print("End Date (YYYY-MM-DD): ");
             LocalDate end = LocalDate.parse(s.nextLine().trim());
 
-            System.out.println("\n📆 Expenditures from " + start + " to " + end + ":");
+            System.out.println("\nExpenditures from " + start + " to " + end + ":");
             for (String code : historyList.toArray()) {
                 Expenditure e = expenditureMap.get(code);
                 if (!e.date.isBefore(start) && !e.date.isAfter(end)) {
@@ -141,7 +141,7 @@ public class viewExpenditure {
                 }
             }
         } catch (Exception e) {
-            System.out.println("❌ Invalid date input.");
+            System.out.println("Invalid date input.");
         }
     }
 

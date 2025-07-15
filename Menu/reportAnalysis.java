@@ -15,7 +15,7 @@ public class reportAnalysis {
 
         while (true) {
             System.out.println("""
-            \n📊 Report & Analytics Menu:
+            \nReport & Analytics Menu:
             1. Monthly burn‑rate
             2. Profitability forecast
             3. Material/Category price impact
@@ -55,16 +55,16 @@ public class reportAnalysis {
                 }
             }
 
-            System.out.println("\n📅 Monthly Burn-rate:");
+            System.out.println("\nMonthly Burn-rate:");
             tree.printInOrder();
 
         } catch (IOException e) {
-            System.out.println("⚠️ Error reading file: " + e.getMessage());
+            System.out.println(" Error reading file: " + e.getMessage());
         }
     }
 
     public static void profitReport() {
-        System.out.println("💰 Profitability forecasting not yet implemented.");
+        System.out.println("Profitability forecasting not yet implemented.");
     }
 
     public static void categoryPriceReport() {
@@ -85,11 +85,11 @@ public class reportAnalysis {
                 }
             }
 
-            System.out.println("\n📊 Category Price Impact:");
+            System.out.println("\nCategory Price Impact:");
             categoryTotals.printAll();
 
         } catch (IOException e) {
-            System.out.println("⚠️ Error reading file: " + e.getMessage());
+            System.out.println(" Error reading file: " + e.getMessage());
         }
     }
 }

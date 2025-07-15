@@ -31,10 +31,10 @@ public class receipt {
     public static void loadReceipt() {
         Scanner s = new Scanner(System.in);
         while (true) {
-            System.out.println("\n📎 Receipt & Invoice Menu:");
+            System.out.println("\nReceipt & Invoice Menu:");
             System.out.println("1. Upload Receipt");
             System.out.println("2. Review Receipt");
-            System.out.println("3. Show Queue");
+            System.out.println("3. Show Receipt");
             System.out.println("0. Back");
 
             System.out.print("Choose: ");
@@ -53,7 +53,7 @@ public class receipt {
                 case "0":
                     return;
                 default:
-                    System.out.println("❌ Invalid choice.");
+                    System.out.println("Invalid choice.");
             }
         }
     }
@@ -72,24 +72,24 @@ public class receipt {
         uploadQueue.push(r);
         saveReceiptToFile(r);
 
-        System.out.println("✅ Receipt uploaded and added to queue.");
+        System.out.println("Receipt uploaded and added to queue.");
     }
 
     private static void reviewReceipt() {
         if (uploadQueue.isEmpty()) {
-            System.out.println("📭 No receipts to review.");
+            System.out.println("No receipts to review.");
             return;
         }
 
         Receipt r = uploadQueue.pop();
         r.status = "Reviewed";
 
-        System.out.println("\n🧾 Reviewing Receipt:");
+        System.out.println("\nReviewing Receipt:");
         System.out.println(r);
     }
 
     private static void showQueue() {
-        System.out.println("\n📥 Upload Queue:");
+        System.out.println("\n Receipts:");
         uploadQueue.printStack();
     }
 
@@ -97,7 +97,7 @@ public class receipt {
         try (FileWriter fw = new FileWriter("Menu/receipts.txt", true)) {
             fw.write(r.toString() + "\n---\n");
         } catch (IOException e) {
-            System.out.println("⚠️ Failed to save receipt: " + e.getMessage());
+            System.out.println(" Failed to save receipt: " + e.getMessage());
         }
     }
 }
