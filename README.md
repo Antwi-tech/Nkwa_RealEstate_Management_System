@@ -24,7 +24,7 @@ without external libraries.
 * **Search & Sort**
   Filter expenditures by date, category, account, or other properties; sort with custom algorithms.
 
-* **Financial Reports & Analytics**
+ **Financial Reports & Analytics**
   Calculate monthly burn rates, profitability forecasts, and category-level cost impact.
 
 * **Custom Data Structures**
@@ -205,5 +205,9 @@ Here’s how the performance maps to real functionality:
 
 Developed by Antwiwaa and team for offline-capable financial tracking and analysis — built for 
 affordability and technical transparency.
+
+<img width="1080" height="368" alt="image" src="https://github.com/user-attachments/assets/674e854a-4236-4c43-a825-d38e18b5935a" />
+
+
 
 
