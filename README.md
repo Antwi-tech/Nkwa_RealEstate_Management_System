@@ -199,6 +199,8 @@ Here’s how the performance maps to real functionality:
 * **Receipts (LIFO)** → `stack` used to review uploads in reverse order.
 * **Low Balance Alerts** → `priorityqueue` used to prioritize accounts with lowest balances.
 * **Burn Rate/Monthly Reports** → `treeMap` organizes and aggregates costs per `YearMonth`.
+* <img width="1080" height="368" alt="image" src="https://github.com/user-attachments/assets/3088aea5-89b1-48df-a319-e62e16a290f1" />
+
 
 ---
 ##  Author & Contact
@@ -206,7 +208,7 @@ Here’s how the performance maps to real functionality:
 Developed by Antwiwaa and team for offline-capable financial tracking and analysis — built for 
 affordability and technical transparency.
 
-<img width="1080" height="368" alt="image" src="https://github.com/user-attachments/assets/674e854a-4236-4c43-a825-d38e18b5935a" />
+
 
 
 
